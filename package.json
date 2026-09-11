@@ -1,0 +1,27 @@
+{
+  "name": "gibwork-github-bounty",
+  "version": "1.0.0",
+  "description": "Local CLI for automating Gibwork GitHub bounty workflows.",
+  "type": "module",
+  "main": "./dist/cli/index.js",
+  "bin": {
+    "gibwork": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/cli/index.ts",
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "test": "node --import tsx --test tests/**/*.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^14.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
